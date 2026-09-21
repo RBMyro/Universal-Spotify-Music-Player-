@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    position: relative;
+    width: 450px;
+    height: 110px;
+}
+
+.backdrop {
+    position: relative;
+    top: 15px;
+    left: 0px;
+    width: 450px;
+    height: 65px;
+    background: orange;
+}
