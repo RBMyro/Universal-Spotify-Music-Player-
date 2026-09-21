@@ -20,3 +20,22 @@ body {
     height: 65px;
     background: orange;
 }
+
+.bar {
+    position: absolute;
+    top: 0px;
+    left: 8px;
+    width: 420px;
+    height: 30px;
+    background: rgba(95, 75, 115, 1);
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand {
+    font-size: 24px;
+    color: white;
+}
