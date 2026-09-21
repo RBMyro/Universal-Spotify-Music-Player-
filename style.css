@@ -42,10 +42,31 @@ body {
 
 .divider {
 /* thin vertical line separating the brand text from the speaker icon */
-    Width: 4px;
+    width: 4px;
     align-self: stretch;
     background: orange;
     border-radius: 2px;
+}
+
+.speaker {
+    /* Fixes the SVG's rendered size, since viewBox alone doesn't set an actual display size */
+    width: 26px;
+    height: 22px;
+}
+
+.speaker .cone {
+    /*  outline-only triangle, it is not solid filled */
+    fill: none;
+    stroke: white;
+    stroke-width: 2;
+    stroke-linejoin: round;
+}
+
+.speaker .wave {
+    fill: none;
+    stroke: orange;
+    stroke-width: 2;
+    stroke-linecap: round;
 }
 
 .subtitle {
