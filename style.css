@@ -37,5 +37,18 @@ body {
 
 .brand {
     font-size: 24px;
+    color: white; /* this is currently redundant, as it is already set in the .bar class, but it can be kept for clarity */
+}
+
+.divider {
+/* thin vertical line separating the brand text from the speaker icon */
+    Width: 4px;
+    align-self: stretch;
+    background: orange;
+    border-radius: 2px;
+}
+
+.subtitle {
+    font-size: 14px;
     color: white;
 }
