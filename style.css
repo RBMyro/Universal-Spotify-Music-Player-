@@ -74,3 +74,31 @@ body {
     font-size: 12px;
     color: #c4b8d9;
 }
+
+.track-area {
+    /* The "window" the scrolling text lives inside, it clips anything outside of it.*/
+    position: absolute;
+    flex: 1;
+    height: 100;
+    overflow: hidden;
+}
+
+.track-name {
+    /* The actual moving text, positioned independently so it can scroll */
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translate(0, -50%);
+    white-space: nowrap;
+    font-size: 30px;
+    /* runs the scroll-left animation: 20 seconds per cycle, constant speed, 
+    repeats forever, waits also 1s before starting  */
+    animation: scroll-left 20s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes scroll-left {
+    from { transform: translate(0, -50%); }
+    to { transform: translate(-500px, -50%); } 
+        /* moves the text left by 500px over the course of the animation */
+}
