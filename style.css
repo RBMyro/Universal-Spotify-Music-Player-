@@ -131,11 +131,11 @@ body {
     /* The thumb is the small circle that sits on top of the progress-fill, it is positioned absolutely 
     inside the progress-track and moves along with the fill. */
     position: absolute;
-    left: 0%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    left: 0%;
     width: 10px;
     height: 10px;
     background: orange;
     border-radius: 50%;
+    transform: translate(-50%, -50%);
 }
