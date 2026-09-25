@@ -102,3 +102,40 @@ body {
     to { transform: translate(-500px, -50%); } 
         /* moves the text left by 500px over the course of the animation */
 }
+
+.progress-track {
+    /* The background colours the progress whilst the fill sits inside.  */
+    position: absolute;
+    left: 0pc;
+    bottom: 6px;
+    width: 450pc;
+    height: 5px;
+    background: rgba(95, 75, 115, 1);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    /* The fill is the part that actually moves, it is positioned absolutely inside the progress-track 
+    and shows how far the song has progressed. */
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background: orange;
+    border-radius: 999px;
+}
+
+.progress-thumb {
+    /* The thumb is the small circle that sits on top of the progress-fill, it is positioned absolutely 
+    inside the progress-track and moves along with the fill. */
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background: orange;
+    border-radius: 50%;
+}
