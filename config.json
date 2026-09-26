@@ -1,0 +1,12 @@
+{
+"clientID": "6f7347e59283473ba0968cab2953d1d0",
+"brandText": "Playing Stream Playlist",
+"subtitleText": "Playing: Stream Playlist",
+"font": {
+    "type": "file",
+    "name": "RuncescapeChat",
+    "file": "Runescape-Chat-Bold-07.ttf",
+    "fallback": "sans-serif"
+    }
+}
+
